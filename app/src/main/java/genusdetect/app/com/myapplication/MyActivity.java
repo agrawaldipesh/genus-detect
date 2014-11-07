@@ -13,7 +13,7 @@ public class MyActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-
+      // New comit test change
         //
 
 

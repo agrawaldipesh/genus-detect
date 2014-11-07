@@ -19,9 +19,11 @@ public class MyActivity extends Activity {
         util.suma(5,61);
 
         super.onCreate(savedInstanceState);
-
+//(exxgxh)
         super.setContentView(R.layout.activity_my);
         Integer total1 = suma(5, 9);
+
+
 
     }
 

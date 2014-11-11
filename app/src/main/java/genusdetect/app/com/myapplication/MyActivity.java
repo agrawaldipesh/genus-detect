@@ -1,6 +1,8 @@
 package genusdetect.app.com.myapplication;
 
 import android.app.Activity;
+import android.app.DialogFragment;
+import android.app.FragmentManager;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -26,11 +28,11 @@ public class MyActivity extends Activity {
 
         setContentView(R.layout.activity_my);
 
-        final EditText text = (EditText)findViewById(R.id.editText);
+/*        final EditText text = (EditText)findViewById(R.id.editText);
 
-        text.onHoverChanged(true);
+        text.onHoverChanged(true);*/
 
-        // Initialize UI elements
+      /*  // Initialize UI elements
         final EditText addrText = (EditText) findViewById(R.id.editText);
         final Button button = (Button) findViewById(R.id.mapButton);
 
@@ -59,7 +61,7 @@ public class MyActivity extends Activity {
                 }
             }
         });
-
+*/
 
     }
 
@@ -104,5 +106,10 @@ public class MyActivity extends Activity {
     protected void onDestroy() {
         super.onDestroy();
         Log.i(TAG, "The activity is about to be destroyed.");
+    }
+
+    public void showDatePickerDialog(View v) {
+        DialogFragment newFragment = new DateDialogFragment();
+        newFragment.show(getFragmentManager(), "datePicker");
     }
 }

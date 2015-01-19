@@ -16,18 +16,24 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 
+
+    <TextView
+        android:id="@+id/dateDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="24sp" />
+
     <Button
+        android:id="@+id/pickDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/pick_date"
-        android:onClick="showDatePickerDialog"
-        android:id="@+id/button"
         android:layout_alignParentTop="true"
-        android:layout_alignLeft="@+id/mapButton"
-        android:layout_alignStart="@+id/mapButton"
-        android:layout_marginTop="148dp" />
-
-
+        android:layout_alignLeft="@+id/dateDisplay"
+        android:layout_alignStart="@+id/dateDisplay"
+        android:layout_marginTop="30dp"
+        android:textSize="24sp" />
 
 
 </RelativeLayout>
